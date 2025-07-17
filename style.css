@@ -1,0 +1,35 @@
+/* Custom styles for Weather App */
+
+#bg-gradient {
+  transition: background 0.7s;
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.5s;
+}
+.weather-icon.animated {
+  transform: scale(1.1) rotate(-10deg);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  #weather-card {
+    padding: 1.5rem;
+  }
+  .weather-icon {
+    width: 60px;
+    height: 60px;
+  }
+} 
